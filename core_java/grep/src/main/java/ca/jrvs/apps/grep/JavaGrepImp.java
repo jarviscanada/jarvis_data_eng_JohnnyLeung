@@ -57,18 +57,28 @@ public class JavaGrepImp implements JavaGrep {
     javaGrepImp.setOutFile(args[2]);
 
     try {
-        javaGrepImp.process();
+      javaGrepImp.process();
     } catch (Exception ex) {
-        javaGrepImp.logger.error("Error: Unable to process", ex);
+      javaGrepImp.logger.error("Error: Unable to process", ex);
     }
-	}
+  }
 
   /**
    * Top level search workflow
    * @throws IOException
    */
   @Override
-  void process() throws IOException;
+  void process() throws IOException {
+    List<String> matchedLines = new ArrayList<>();
+    for (File file : listFiles(this.rootPath)) {
+      for (String line : readLines(file)) {
+        if (containsPattern(line)) {
+          matchedLines.add(line);
+        }
+      }
+    }
+    writeToFile(matchedLines);
+  }
 
   /**
    * Traverse a given directory and return all files
@@ -76,7 +86,19 @@ public class JavaGrepImp implements JavaGrep {
    * @return files under the rootDir
    */
   @Override
-  List<File> listFiles(String rootDir);
+  List<File> listFiles(String rootDir) {
+    List<File> files = new ArrayList<>();
+    if (File(rootDir).listFiles() != null) {
+      for (File file : File(rootDir).listFiles()) {
+        if (file.isFile()) {
+          files.add(file);
+        } else if (file.isDirectory()) {
+          files.addAll(listFiles(file.getAbsolutePath()));
+        }
+      }
+    }
+    return files;
+  }
 
   /**
    * Read a file and return all lines
