@@ -67,7 +67,6 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Top level search workflow
-   * 
    * @throws IOException
    */
   @Override
@@ -85,7 +84,6 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Traverse a given directory and return all files
-   * 
    * @param rootDir input directory
    * @return files under the rootDir
    */
@@ -133,7 +131,6 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * check if a line contains the regex pattern (passed by user)
-   * 
    * @param line input string
    * @return true if there is a match
    */
