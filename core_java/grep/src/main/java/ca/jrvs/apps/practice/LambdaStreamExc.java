@@ -18,7 +18,6 @@ public interface LambdaStreamExc {
    */
   Stream<String> createStrStream(String ... strings);
 
-
   /**
    * Convert all strings to uppercase
    * please use createStrStream
@@ -78,7 +77,6 @@ public interface LambdaStreamExc {
    * @return
    */
   DoubleStream squareRootIntStream(IntStream intStream);
-
 
   /**
    * filter all even number and return odd numbers from a intStream
@@ -153,6 +151,4 @@ public interface LambdaStreamExc {
    * @return
    */
   Stream<Integer> flatNestedInt(Stream<List<Integer>> ints);
-
-
 }
