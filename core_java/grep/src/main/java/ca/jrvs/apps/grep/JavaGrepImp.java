@@ -121,10 +121,10 @@ public class JavaGrepImp implements JavaGrep {
 	lines.add(line);
       }
       br.close();
-    } catch (FileNotFoundException e) {
-      logger.error(e.getMessage(), e);
-    } catch (IOException e) {
-      logger.error(e.getMessage(), e);
+    } catch (FileNotFoundException ex) {
+      logger.error(ex.getMessage(), ex);
+    } catch (IOException ex) {
+      logger.error(ex.getMessage(), ex);
     }
     return lines;
   }
