@@ -110,7 +110,7 @@ public class JavaGrepImp implements JavaGrep {
    */
   @Override
   public List<String> readLines(File inputFile) {
-    List<String> lines = new ArrayList<String>();
+    List<String> lines = new ArrayList<>();
     if (!inputFile.exists()) {
       throw new IllegalArgumentException("inputFile is not a file");
     }
