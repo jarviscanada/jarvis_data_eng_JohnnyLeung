@@ -3,9 +3,9 @@ package ca.jrvs.apps.grep;
 import java.io.*;
 import java.util.*;
 import java.util.regex.Pattern;
+import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.apache.log4j.BasicConfigurator;
 
 public class JavaGrepImp implements JavaGrep {
 
