@@ -12,7 +12,7 @@ class Test {
   	  .enableHiveSupport()
   	  .getOrCreate()
   	  
-  	import spark.implicits._
+    import spark.implicits._
     import spark.sql
   
     // src table
