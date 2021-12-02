@@ -11,21 +11,21 @@ object HiveTables extends App {
       System.exit(1)
     }
     
-  	val spark = SparkSession
-  	  .builder()
-  	  .appName("HiveTables")
-  	  .config("spark.master", "local")
-  	  .enableHiveSupport()
-  	  .getOrCreate()
+    val spark = SparkSession
+      .builder()
+      .appName("HiveTables")
+      .config("spark.master", "local")
+      .enableHiveSupport()
+      .getOrCreate()
   	  
     import spark.implicits._
-  	import spark.sql
+    import spark.sql
 
     sql(s"DROP TABLE IF EXISTS $src")
     
     sql(s"DROP TABLE IF EXISTS $backup")
 
-	  // create the tables
+    // create the tables
     sql(s"""CREATE TABLE $src (foo String, bar long NOT NULL, baz BigDecimal)
     PARITIONED BY (part String)""".stripMargin)
       
@@ -33,7 +33,7 @@ object HiveTables extends App {
     PARITIONED BY (part String)""".stripMargin)
     
     sql("set hive.exec.dynamic.partition=true")
-	  sql("set hive.exec.dynamic.partition.mode=nonstrict")
+    sql("set hive.exec.dynamic.partition.mode=nonstrict")
 
     sql(s"""LOAD DATA LOCAL INPATH "${args(0)}" INTO TABLE $src""")
   
@@ -42,12 +42,12 @@ object HiveTables extends App {
     val srcDF = sql("SELECT * FROM $src")
     val backupDF = sql("SELECT * FROM $backup")
   
-  	// update backup table with new data and overwriting old data
+    // update backup table with new data and overwriting old data
     val updateDF = sql("SELECT $srcDF .* from $srcDF join $backupDF on $srcDF.part = $backupDF.part")
     val totalDF = $srcDF.except($updateDF).union($backupDF)
     totalDF.write.mode(SaveMode.Overwrite).saveAsTable("tempTable")
   	
-  	// write to backup table
+    // write to backup table
     sql(s"INSERT OVERWRITE $backup PARTITION (part) SELECT * FROM $tempTable")
 
     sparkContext.stop()
