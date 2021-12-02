@@ -4,7 +4,7 @@ import org.apache.spark.sql.{Row, SaveMode, SparkSession}
 import scala.math.BigDecimal
 
 class Test {
-  test("basic") {
+  test("create tables and put some data in them") {
     val spark = SparkSession
       .builder()
       .appName("Test")
