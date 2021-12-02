@@ -5,12 +5,12 @@ import scala.math.BigDecimal
 
 class Test {
   test("basic") {
-  	val spark = SparkSession
-  	  .builder()
-  	  .appName("Test")
-  	  .config("spark.master", "local")
-  	  .enableHiveSupport()
-  	  .getOrCreate()
+    val spark = SparkSession
+      .builder()
+      .appName("Test")
+      .config("spark.master", "local")
+      .enableHiveSupport()
+      .getOrCreate()
   	  
     import spark.implicits._
     import spark.sql
