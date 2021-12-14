@@ -12,39 +12,39 @@ import java.util.List;
 public class CustomerDAO extends DataAccessObject<Customer> {
 	
   private static final String INSERT =
-  		"INSERT INTO customer"
-  		+ " (first_name, last_name, email, phone, address, city, state, zipcode)" +
-  		"VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+  	"INSERT INTO customer"
+  	+ " (first_name, last_name, email, phone, address, city, state, zipcode)" +
+  	"VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
   
   private static final String GET_ONE =
-  		"SELECT"
-  		+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode" +
-  		"FROM customer " +
-  		"WHERE customer_id = ?";
+  	"SELECT"
+  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode" +
+  	"FROM customer " +
+  	"WHERE customer_id = ?";
   
   private static final String UPDATE =
-  		"UPDATE customer SET"
-  		+ " first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
-  		"WHERE customer_id = ?";
+  	"UPDATE customer SET"
+  	+ " first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
+  	"WHERE customer_id = ?";
   
   private static final String DELETE =
-  		"DELETE FROM customer " +
-  		"WHERE customer_id = ?";
+  	"DELETE FROM customer " +
+  	"WHERE customer_id = ?";
   
   private static final String GET_ALL_LMT =
-  		"SELECT"
-  	  + " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
-  	  "FROM customer " +
-  	  "ORDER BY last_name, first_name, " +
-  	  "LIMIT ?";
+  	"SELECT"
+  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
+  	"FROM customer " +
+  	"ORDER BY last_name, first_name, " +
+  	"LIMIT ?";
   
   private static final String GET_ALL_PAGED =
-  		"SELECT"
-  		+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
-  		"FROM customer " +
-  		"ORDER BY last_name, first_name " +
-  		"LIMIT ? " +
-  		"OFFSET ?";
+  	"SELECT"
+  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
+  	"FROM customer " +
+  	"ORDER BY last_name, first_name " +
+  	"LIMIT ? " +
+  	"OFFSET ?";
   
   public CustomerDAO(Connection connection) {
     super(connection);
