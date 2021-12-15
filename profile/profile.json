@@ -14,7 +14,7 @@
   "highlighted_projects": [
     {
       "description": "Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.",
-      "git_url": "https://github.com/hongyixiong/ArtificialLives",
+      "git_url": "https://github.com/EternalDragonX/Conway-s-Game-of-Life",
       "name": "Conway's Game of Life"
     },
     {

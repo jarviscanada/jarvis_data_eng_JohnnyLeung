@@ -28,7 +28,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 
 ## Highlighted Projects
-**Conway's Game of Life** [[GitHub](https://github.com/hongyixiong/ArtificialLives)]: Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.
+**Conway's Game of Life** [[GitHub](https://github.com/EternalDragonX/Conway-s-Game-of-Life)]: Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.
 
 **Connect Four with Reinforcement Learning** [[GitHub](https://github.com/EternalDragonX/Connect-Four-with-Reinforcement-Learning)]: Training a reinforcement learning agent to play a game of Connect 4, with a visual simulation. The agent utilizes the deep Q-learning algorithm to learn after every game against either a human or another agent. Written in Python.
 
