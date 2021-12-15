@@ -5,10 +5,8 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a graduate from Queen's University in Kingston, Ontario, with a Bachelor of Computing (Honours) with a specialization in Software Design.
-My years in school have taught me the importance of having good work habits, strong organizational skills, and strong time management skills. My work experience
-has helped me develop my oral communication skills, teamwork skills, professionalism, and ability to work well under pressure. Now I am eager to apply
-what I have learned both in school and in my work to a challenging, dynamic, and teamwork-oriented role.
+summary: "I graduated from Queen's University in Kingston, Ontario, with a Bachelor of Computing (Honours) with a specialization in Software Design.
+Now I am eager to apply what I have learned both in school and in my work to a challenging, dynamic, and teamwork-oriented role.
 
 Currently, I am working as a Data Engineer at Jarvis Consulting Group. At Jarvis, I am expanding my skill set by exercising
 agile development methods and periodically learning new technology. More specifically, I have been working with my team
@@ -23,10 +21,11 @@ What I also like is the challenge and growth: there are countless programming la
 certain that I could not learn them all even in an entire lifetime. While this may seem daunting, it also means that I will never be left without an opportunity to
 grow; there will always be something I can learn and develop my expertise with, and that challenge drives me to push on.
 
-I sincerely hope that the skills, pasion, and work shown here make you want to learn more about me. If so, I look forward to speaking with you.
+I sincerely hope that the skills, passion, and work shown here make you want to learn more about me. If so, I look forward to speaking with you."
 
 # Group your skills by level.
-# Your skills can be anything software-related (e.g. language, frameworks, methodologies, software, etc.).
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+# DO NOT mention skills that you don't want to work on in the future (e.g. MS office)
 skills:
   # At least 5 skills
   proficient:
@@ -61,69 +60,61 @@ skills:
 
 # List of Jarvis projects
 jarvis_projects:
-  - name: "Cluster Monitor"
+  - name: "Linux Cluster Resource Monitoring App"
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used (e.g. programming languages, libraries, algorithms,
-    hardware, tools, etc.).
+    # hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed a Linux Cluster Monitoring Agent (LCMA) that is used to record hardware specifications and resource usage (e.g. CPU/Memory) in real-time.
+    # Please read the project description guideline carefully. Make sure you follow the simplified SDLC pattern. (t.ly/NlXQ)
+    # Please include the following keywords: CentOS, Bash/Shell, docker, RDBMS/SQL/Postgresql, crontab, data analytics
+    description: "Developed a Linux Cluster Monitoring Agent (LCMA) that is used to record hardware specifications and resource usage (e.g. CPU/Memory) in real-time.
     It is used by the Jarvis Linux Cluster Administration for a Linux cluster of nodes/servers running CentOS 7. Crontab triggers are used to collect data from the
     host machine every minute, which is then stored in a Relational Database Management System database using PostgreSQL (PSQL). Bash scripts are used to create,
     stop, and start the PSQL Docker instance for data collection. SQL queries are used to analyze and present the collected data; they can find the average memory
-    a node uses over a time interval and detect server failures.
+    a node uses over a time interval and detect server failures."
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Not Started"
-      - "JDBC App: Developed a a customer-order-processing system programmed in Java. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker
-      container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and
-      perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers,
-      orders, salespeople, and products." PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build
-      dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.
+      # Keywords: Java 8, JDBC, RDBMS, SQL, CRUD, DAO
+      - "JDBC App: Developed a a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a
+      PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database.
+      JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains
+      basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to
+      compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and
+      verification."
+      # Keywords: Java 8, Lambda, Stream API, IntelliJ
       - "Grep App: Developed an application to replicate the Linux `grep` command, which recurively searches for a specified text pattern in files in a
-      given directory and outputs matched lines to a file. Maven was used to package the application into a JAR file. A Docker image of the application was made
+      given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the
+      Java 8 Lambda Stream API. Maven was used to package the application into a JAR file. A Docker image of the application was made
       and is available on Docker Hub."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
 
 # List of personal or academic projects
 # Feel free to add more projects
+# Please read the project description guideline carefully. Make sure you follow the simplified SDLC pattern. (t.ly/NlXQ)
 highlighted_projects:
     #project name
-  - name: "Conway's Game of Life – Python"
+  - name: "Conway's Game of Life"
     #URL is optional
     git_url: "https://github.com/hongyixiong/ArtificialLives"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed an artificial intelligence project in Python that simulated constantly-evolving artificial life, with a live graphical display.
+    description: Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.
   - name: "Connect Four with Reinforcement Learning"
     git_url: "https://github.com/EternalDragonX/Connect-Four-with-Reinforcement-Learning"
-    description: Training a reinforcement learning agent in Python to play a game of Connect 4, with a visual simulation. The agent utilizes the deep Q-learning
-    algorithm to learn after every game against either a human or another agent.
+    description: "Training a reinforcement learning agent to play a game of Connect 4, with a visual simulation. The agent utilizes the deep Q-learning
+    algorithm to learn after every game against either a human or another agent. Written in Python."
   - name: "Learning Management System"
-    description: Developed a web application with HTML, CSS, JavaScript, Node.js, Vue.js for Queen’s University’s drama and music department, which is made up of
-    80+ staff. Allows users to build an annual list of course offerings, track instructor teaching history and administrative service, calculate workload, and
-    update/modify the database. A year-long project that involved group work, design and code review meetings, delivery of complete software specification and
-    design, and applying the waterfall process to plan, manage, and track the project. Required frequent communication with the customer and supervisor through
-    progress updates, oral presentations, and formal meetings.
-
+    description: "Developed a web application for Queen’s University’s drama and music department, which is made up of 80+ staff. Allows users to build an annual
+    list of course offerings, track instructor teaching history and administrative service, calculate workload, and update/modify the database. A year-long project
+    that involved group work, design and code review meetings, delivery of complete software specification and design, and applying the waterfall process to plan,
+    manage, and track the project. Required frequent communication with the customer and supervisor through progress updates, oral presentations, and formal
+    meetings. Used HTML, CSS, JavaScript, Node.js, Vue.js."
+    
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware,
-tools, etc.).
+#tools, etc.).
+# Please read the project description guideline carefully. Make sure you follow the simplified SDLC pattern. (t.ly/NlXQ)
 #The description must be more than 25 words. If your experience is not software-related, please focus on soft skills and achievements (e.g. team collaboration,
-problem-solving, improvements, communication).
+#problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
@@ -138,7 +129,7 @@ professional_experience:
     description: "Worked closely with students via email and Zoom calls to provide individualized attention and assistance. Collaborated with instructor and other
     TAs to ensure efficient operation and delivery of courses. Created a friendly, open environment for students during hosted office hours, where students could
     get help, study, work on assignments, share concerns, talk with others, or simply hang out."
-
+    
 #List of edcuation
 education: 
   - school_name: "Queen's University"
@@ -149,3 +140,13 @@ education:
     awards_achievements: 
       - "Dean's Honour List (2019-2020): The Dean's Honour List for undergraduate students in the Faculty of Arts and Science recognizes those students who have
       achieved an academic year GPA of 3.50 and above, based on the combined GPA for all courses taken in the Fall, Winter and Summer terms"
+      
+#Optional section
+others:
+    #category
+  - title: "Activities/Hobbies"
+    #list of items
+    bullets:
+      - "Watching tech channels on YouTube (Linus, Marques Brownlee, etc.)"
+      - "Casual gaming"
+      - "Watching movies/shows"
