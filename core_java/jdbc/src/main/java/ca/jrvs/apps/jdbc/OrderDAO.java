@@ -13,19 +13,18 @@ import java.util.List;
 public class OrderDAO extends DataAccessObject<Order> {
 	
   private static final String GET_BY_ID =
-  		"SELECT"
-      + " c.first_name, c.last_name, c.email,"
-      + " o.order_id, o.creation_date, o.total_due, o.status,"
-      + " s.first_name, s.last_name, s.email,"
-      + " ol.quantity,"
-      + " p.code, p.name, p.size, p.variety, p.price " +
-      "FROM orders o "
-      + "join customer c on o.customer_id = c.customer_id "
-      + "join salesperson s on" +
-      "o.salesperson_id=s.salesperson_id "
-      + "join order_item oI on oI.order_id = o.order_id "
-      + "join product p on oI.product_id = p.product_id " +
-      "where o.order_id = ?";
+        "SELECT"
+        + " c.first_name, c.last_name, c.email,"
+        + " o.order_id, o.creation_date, o.total_due, o.status,"
+        + " s.first_name, s.last_name, s.email,"
+        + " ol.quantity,"
+        + " p.code, p.name, p.size, p.variety, p.price " +
+        "FROM orders o "
+        + "join customer c on o.customer_id = c.customer_id "
+        + "join salesperson s on o.salesperson_id=s.salesperson_id "
+        + "join order_item oI on oI.order_id = o.order_id "
+        + "join product p on oI.product_id = p.product_id " +
+        "WHERE o.order_id = ?";
   
   private static final String GET_FOR_CUST = "SELECT * FROM get_orders_by_customer(?)";
 
@@ -43,7 +42,7 @@ public class OrderDAO extends DataAccessObject<Order> {
       List<OrderLine> orderLines = new ArrayList<>();
       while (resultSet.next()) {
         if (orderId == 0) {
-        	order.setCustomerFirstName(resultSet.getString(1));
+          order.setCustomerFirstName(resultSet.getString(1));
           order.setCustomerLastName(resultSet.getString(2));
           order.setCustomerEmail(resultSet.getString(3));
           order.setId(resultSet.getLong(4));
@@ -93,8 +92,8 @@ public class OrderDAO extends DataAccessObject<Order> {
   }
   
   public List<Order> getOrdersForCustomer(long customerId) {
-  	List<Order> orders = new ArrayList<>();
-  	try (PreparedStatement statement = connection.prepareStatement(GET_FOR_CUST);) {
+    List<Order> orders = new ArrayList<>();
+    try (PreparedStatement statement = connection.prepareStatement(GET_FOR_CUST);) {
       statement.setLong(1, id);
       ResultSet resultSet = statement.executeQuery();
       long orderId = 0;
@@ -102,11 +101,11 @@ public class OrderDAO extends DataAccessObject<Order> {
       while (resultSet.next()) {
       	long localOrderId = resultSet.getLong(4);
       	if (orderId != localOrderId) {
-      		order = new Order();
-      		orders.add(order);
+      	  order = new Order();
+      	  orders.add(order);
           order.setId(localOrderId);
           orderId = localOrderId;
-      		order.setCustomerFirstName(resultSet.getString(1));
+      	  order.setCustomerFirstName(resultSet.getString(1));
           order.setCustomerLastName(resultSet.getString(2));
           order.setCustomerEmail(resultSet.getString(3));
           order.setCreationDate(resultSets.getDate(5));
@@ -127,10 +126,10 @@ public class OrderDAO extends DataAccessObject<Order> {
         orderLine.setProductPrice(resultSet.getBigDecimal(16));
         order.getOrderLines().add(orderLine);
       }
-  	} catch (SQLException ex) {
+    } catch (SQLException ex) {
       ex.printStackTrace();
       throw new RuntimeException(ex);
     }
-  	return orders;
+    return orders;
   }
 }
