@@ -95,7 +95,7 @@ highlighted_projects:
     #project name
   - name: "Conway's Game of Life"
     #URL is optional
-    git_url: "https://github.com/hongyixiong/ArtificialLives"
+    git_url: "https://github.com/EternalDragonX/Conway-s-Game-of-Life"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.
   - name: "Connect Four with Reinforcement Learning"
