@@ -1,5 +1,5 @@
 # Introduction
-The purpose of this application is to replicate the Linux `grep` command, which searches for a text pattern recursively in a given directory and outputs matched lines to a file.
+The purpose of this application is to replicate the Linux `grep` command, which recurively searches for a specified text pattern in files in a given directory and outputs matched lines to a file.
 
 There are two different implementations:
 1. `JavaGrepImp` uses loops, BufferedReader, and BufferedWritter to read and write files
