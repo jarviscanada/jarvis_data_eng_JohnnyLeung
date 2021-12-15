@@ -32,9 +32,9 @@ java -jar target/grep-1.0-SNAPSHOT.jar regex rootPath outFile
 2. Using the Docker image on Docker Hub:
 ```
 #Pulls the Docker image from Docker Hub
-docker pull /grep
+docker pull johnnyleung/grep
 #Runs local Docker container
-docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out /grep regex rootPath outFile
+docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out johnnyleung/grep regex rootPath outFile
 ```
 
 # Implemenation
