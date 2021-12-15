@@ -90,8 +90,8 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public List<File> listFiles(String rootDir) {
     List<File> files = new ArrayList<>();
-    File rootFile = new File(rootDir);
-      if (rootFile.listFiles() != null) {
+    File rootDirF = new File(rootDir);
+      if (rootDirF.listFiles() != null) {
 	for (File file : rootFile.listFiles()) {
 	  if (file.isFile()) {
 	    files.add(file);
