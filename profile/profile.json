@@ -2,7 +2,7 @@
   "education": [
     {
       "awards_achievements": [
-        "Dean's Honour List (2019, 2020): The Dean's Honour List for undergraduate students in the Faculty of Arts and Science recognizes those students who have achieved an academic year GPA of 3.50 and above, based on the combined GPA for all courses taken in the Fall, Winter and Summer terms"
+        "Dean's Honour List (2019-2020): The Dean's Honour List for undergraduate students in the Faculty of Arts and Science recognizes those students who have achieved an academic year GPA of 3.50 and above, based on the combined GPA for all courses taken in the Fall, Winter and Summer terms."
       ],
       "degree": "Bachelor of Computing (Honours)",
       "department": "Software Design",
@@ -13,76 +13,42 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeung",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "description": "Developed an artificial intelligence project that simulated constantly-evolving artificial life, with a live graphical display. Written in Python.",
+      "git_url": "https://github.com/hongyixiong/ArtificialLives",
+      "name": "Conway's Game of Life"
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": null,
-      "name": "Machine Learning"
+      "description": "Training a reinforcement learning agent to play a game of Connect 4, with a visual simulation. The agent utilizes the deep Q-learning algorithm to learn after every game against either a human or another agent. Written in Python.",
+      "git_url": "https://github.com/EternalDragonX/Connect-Four-with-Reinforcement-Learning",
+      "name": "Connect Four with Reinforcement Learning"
+    },
+    {
+      "description": "Developed a web application for Queen’s University’s drama and music department, which is made up of 80+ staff. Allows users to build an annual list of course offerings, track instructor teaching history and administrative service, calculate workload, and update/modify the database. A year-long project that involved group work, design and code review meetings, delivery of complete software specification and design, and applying the waterfall process to plan, manage, and track the project. Required frequent communication with the customer and supervisor through progress updates, oral presentations, and formal meetings. Used HTML, CSS, JavaScript, Node.js, Vue.js.",
+      "name": "Learning Management System"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Developed a Linux Cluster Monitoring Agent (LCMA) that is used to record hardware specifications and resource usage (e.g. CPU/Memory) in real-time. It is used by the Jarvis Linux Cluster Administration for a Linux cluster of nodes/servers running CentOS 7. Crontab triggers are used to collect data from the host machine every minute, which is then stored in a Relational Database Management System database using PostgreSQL (PSQL). Bash scripts are used to create, stop, and start the PSQL Docker instance for data collection. SQL queries are used to analyze and present the collected data; they can find the average memory a node uses over a time interval and detect server failures.",
       "git_url": "/linux_sql",
-      "name": "Cluster Monitor"
+      "name": "Linux Cluster Resource Monitoring App"
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+        "JDBC App: Developed a a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.",
+        "Grep App: Developed an application to replicate the Linux `grep` command, which recurively searches for a specified text pattern in files in a given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the Java 8 Lambda Stream API. Maven was used to package the application into a JAR file. A Docker image of the application was made and is available on Docker Hub."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
-      "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Johnny Leung",
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
-      ],
-      "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Watching tech channels on YouTube (Linus, Marques Brownlee, etc.)",
+        "Casual gaming",
+        "Watching movies/shows"
       ],
       "title": "Activities/Hobbies"
     }
@@ -90,24 +56,25 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "description": "Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead. Implemented Gitflow framework for collaboration and project planning. Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java.",
       "duration": "2021-present",
       "title": "Software Developer"
     },
     {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
+      "company": "Queen's University",
+      "description": "Worked closely with students via email and Zoom calls to provide individualized attention and assistance. Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses. Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out.",
+      "duration": "2020-2021",
+      "title": "Teaching Assistant"
     }
   ],
   "skills": {
     "competent": [
       "Python",
       "Docker",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Maven",
+      "Google Cloud Platform",
+      "Windows/Powershell",
+      "Waterfall methodology"
     ],
     "familiar": [
       "C",
@@ -118,15 +85,19 @@
       "CSS",
       "Javascript",
       "Node.js",
-      "Vue.js"
+      "Vue.js",
+      "UML",
+      "Artificial Intelligence"
     ],
     "proficient": [
       "Java",
       "Linux/Bash",
       "RDBMS/SQL",
-      "Agile/Scrum",
-      "Git"
+      "Agile/Scrum methodology",
+      "Git",
+      "Data Structures",
+      "Algorithms"
     ]
   },
-  "summary": "I am a recent graduate from Ryerson University with a Bachelor of Science (Honours) (BSc(Hons)) in Computer Science. During my education, I had the opportunity to study software engineering, database systems, and data mining, solidifying my programming fundamentals and gaining a strong interest in software development. Currently, I am a software developer at Jarvis Consulting Group. At Jarvis, I am developing my skill sets using agile software development practices and working hands-on with applications of new technologies (Docker, REST APIs, Springboot, etc.). I am a strong problem-solver, fast-learner and team player who is excited to face new challenges and contribute to the success of a team as a Data Engineer."
+  "summary": "I graduated from Queen's University in Kingston, Ontario, with a Bachelor of Computing (Honours) with a specialization in Software Design. Now I am eager to apply what I have learned both in school and in my work to a challenging, dynamic, and teamwork-oriented role.\nCurrently, I am working as a Data Engineer at Jarvis Consulting Group. At Jarvis, I am expanding my skill set by exercising agile development methods and periodically learning new technology. More specifically, I have been working with my team in an Agile/Scrum development cycle and have developed applications with Linux, PostgreSQL, and Java. I have a passion for writing clean, efficient, and high-quality code, and I hope that my work at Jarvis shows that.\nWhat excites me about software development is the limitless potential. I can create anything I want or can think of–from trivial applications like a music downloader, to a large-scale, graphical operating system with millions of lines of code like Windows. I can turn any small idea I have into potentially the next Twitter, Facebook, or YouTube; the only thing limiting me as a software developer is my own creativity and drive.\nWhat I also like is the challenge and growth: there are countless programming languages, frameworks, and other development tools available to use, and I am fairly certain that I could not learn them all even in an entire lifetime. While this may seem daunting, it also means that I will never be left without an opportunity to grow; there will always be something I can learn and develop my expertise with, and that challenge drives me to push on.\nI sincerely hope that the skills, passion, and work shown here make you want to learn more about me. If so, I look forward to speaking with you."
 }
