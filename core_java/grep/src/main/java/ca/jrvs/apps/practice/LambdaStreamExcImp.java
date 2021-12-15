@@ -7,7 +7,7 @@ import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class LamdaStreamExcImp implements LamdaStreamExc {
+public class LambdaStreamExcImp implements LambdaStreamExc {
 
   /**
    * Create a String stream from array
