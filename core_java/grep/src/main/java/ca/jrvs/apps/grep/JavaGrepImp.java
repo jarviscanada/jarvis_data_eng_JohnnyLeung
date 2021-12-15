@@ -92,7 +92,7 @@ public class JavaGrepImp implements JavaGrep {
     List<File> files = new ArrayList<>();
     File rootDirF = new File(rootDir);
       if (rootDirF.listFiles() != null) {
-	for (File file : rootFile.listFiles()) {
+	for (File file : rootDirF.listFiles()) {
 	  if (file.isFile()) {
 	    files.add(file);
 	  } else if (file.isDirectory()) {
