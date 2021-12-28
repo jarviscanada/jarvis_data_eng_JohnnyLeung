@@ -9,7 +9,7 @@
   <version>1.0.0-SNAPSHOT</version>
   
   <properties>
-  	<java.verion>8</java.verion>
+    <java.verion>8</java.verion>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.source>${java.version}</maven.compiler.source>
   </properties>
@@ -21,4 +21,4 @@
       <version>42.2.5</version>
     </dependency>
   </dependencies>
- </project>
+</project>
