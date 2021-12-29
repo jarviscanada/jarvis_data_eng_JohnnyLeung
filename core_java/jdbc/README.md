@@ -11,7 +11,7 @@ Technology used:
 
 # Implementaiton
 ## ER Diagram
-
+![ERD](./assets/JDBC-ERD.png)
 
 ## Design Patterns
 Two common patterns that are used when dealing with databases and implementing Data Access Layer (DAL) are the Data Access Object (DAO) pattern and the repository pattern. Both patterns achieve the same goal of abstracting the implementation details of data access, but they each do so in different ways. This project uses the DAO pattern.
