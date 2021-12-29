@@ -9,7 +9,7 @@ db_password=$3
 sudo systemctl status docker > /dev/null || systemctl start docker
 
 #check container status
-docker container inspect jrvs-psql
+docker container inspect jrvs-psql &> /dev/null
 
 #User switch case to handle create|stop|start options
 case $cmd in
