@@ -29,8 +29,3 @@ timestamp=$(vmstat -t | awk '{print $18" "$19}' | tail -n1 | xargs)
 #PSQL command: Inserts hardware specification values into host_info table
 insert_stmt="INSERT INTO host_info(hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp) VALUES('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$L2_cache', '$total_mem', '$timestamp');"
 
-#set up env var for pql cmd
-export PGPASSWORD=$psql_password
-#Insert date into a database
-psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
-exit $?
