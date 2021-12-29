@@ -19,9 +19,9 @@ SELECT hi.id,
        hi.hostname,
        round5(hu.timestamp) AS ts,
        AVG(((CAST(hi.total_mem AS float) - (hu.memory_free * 1000)) / hi.total_mem) * 100) as avg_used_mem_percentage
-FROM   host_usage AS hu
-JOIN   host_info AS hi
-ON     hu.host_id = hi.id
+  FROM host_usage AS hu
+  JOIN host_info AS hi
+    ON hu.host_id = hi.id
 GROUP BY ts, hi.id
 ORDER BY ts, hi.id;
 
@@ -30,7 +30,7 @@ ORDER BY ts, hi.id;
 SELECT host_id,
        round5(timestamp) AS ts,
        COUNT(*) AS num_data_points
-FROM   host_usage
+  FROM host_usage
 GROUP BY ts, host_id
-HAVING   COUNT(*) < 3
+HAVING COUNT(*) < 3
 ORDER BY ts, host_id;
