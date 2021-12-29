@@ -1,7 +1,7 @@
 # Linux Cluster Monitoring Agent
 
 # Introduction
-The Linux Cluster Monitoring Agent (LCMA) is used to record hardware specifications and monitor resource usage (e.g. CPU/Memory) in real-time. It is used by the Jarvis Linux Cluster Administration for a Linux cluster of nodes/servers running CentOS 7.
+The Linux Cluster Monitoring Agent (LCMA) is used to record hardware specifications and monitor resource usage (e.g. CPU/Memory) in real-time. The Jarvis Linux Cluster Administration uses it for a Linux cluster of nodes/servers running CentOS 7.
 
 Crontab triggers are used to collect data from the host machine every minute, which is then stored in a Relational Database Management System database using PostgreSQL (PSQL).
 
