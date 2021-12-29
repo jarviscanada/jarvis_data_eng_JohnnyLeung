@@ -1,5 +1,5 @@
 # Introduction
-The purpose of this application is to replicate the Linux `grep` command, which recurively searches for a specified text pattern in files in a given directory and outputs matched lines to a file.
+The purpose of this application is to replicate the Linux `grep` command, which recursively searches for a specified text pattern in files in a given directory and outputs matched lines to a file.
 
 There are two different implementations:
 1. `JavaGrepImp` uses loops, BufferedReader, and BufferedWritter to read and write files
@@ -12,7 +12,7 @@ Technology used:
 - BufferedReader and BufferedWriter
 - Lambda expressions
 - Stream APIs
-- Maven was used to package the application into a JAR file
+- Maven was used for packaging the application into a JAR file
 - A Docker image of the application was made and is available on Docker Hub
 
 # Quick Start
