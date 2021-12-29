@@ -12,38 +12,34 @@ import java.util.List;
 public class CustomerDAO extends DataAccessObject<Customer> {
 	
   private static final String INSERT =
-  	"INSERT INTO customer"
-  	+ " (first_name, last_name, email, phone, address, city, state, zipcode)" +
+  	"INSERT INTO customer (first_name, last_name, email, phone, address, city, state, zipcode) " +
   	"VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
   
   private static final String GET_ONE =
-  	"SELECT"
-  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode" +
-  	"FROM customer " +
-  	"WHERE customer_id = ?";
+  	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
+  	"FROM   customer " +
+  	"WHERE  customer_id = ?";
   
   private static final String UPDATE =
-  	"UPDATE customer SET"
-  	+ " first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
-  	"WHERE customer_id = ?";
+  	"UPDATE customer " +
+       "SET first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
+     "WHERE customer_id = ?";
   
   private static final String DELETE =
   	"DELETE FROM customer " +
-  	"WHERE customer_id = ?";
+  	 "WHERE customer_id = ?";
   
   private static final String GET_ALL_LMT =
-  	"SELECT"
-  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
-  	"FROM customer " +
-  	"ORDER BY last_name, first_name, " +
-  	"LIMIT ?";
+  	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
+  	  "FROM customer " +
+  	"ORDER BY last_name, first_name " +
+     "LIMIT ?";
   
   private static final String GET_ALL_PAGED =
-  	"SELECT"
-  	+ " customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
-  	"FROM customer " +
+  	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
+  	  "FROM customer " +
   	"ORDER BY last_name, first_name " +
-  	"LIMIT ? " +
+  	 "LIMIT ? " +
   	"OFFSET ?";
   
   public CustomerDAO(Connection connection) {
@@ -103,10 +99,10 @@ public class CustomerDAO extends DataAccessObject<Customer> {
       customer = this.findById(dto.getId());
     } catch (SQLException ex) {
     	try {
-        this.connection.rollback();
+          this.connection.rollback();
     	} catch (SQLException sqlex) {
-        sqlex.printStackTrace();
-        throw new RuntimeException(sqlex);
+          ex.printStackTrace();
+          throw new RuntimeException(sqlex);
     	}
       ex.printStackTrace();
       throw new RuntimeException(ex);
@@ -133,13 +129,24 @@ public class CustomerDAO extends DataAccessObject<Customer> {
       throw new RuntimeException(ex);
     }
   }
+
+  @Override
+  public void delete(long id) {
+    try (PreparedStatement statement = this.connection.prepareStatement(DELETE);) {
+      statement.setLong(1, id);
+      statement.execute();
+    } catch (SQLException ex) {
+      ex.printStackTrace();
+      throw new RuntimeException(ex);
+    }
+  }
   
   public List<Customer> findAllSorted(int limit) {
     List<Customer> customers = new ArrayList<>();
     try (PreparedStatement statement = this.connection.prepareStatement(GET_ALL_LMT);) {
       statement.setInt(1, limit);
       ResultSet rs = statement.executeQuery();
-      while (rs.next()){
+      while (rs.next()) {
         Customer customer = new Customer();
         customer.setId(rs.getLong("customer_id"));
         customer.setFirstName(rs.getString("first_name"));
@@ -163,13 +170,13 @@ public class CustomerDAO extends DataAccessObject<Customer> {
     List<Customer> customers = new ArrayList<>();
     int offset = ((pageNumber - 1) * limit);
     try (PreparedStatement statement = this.connection.prepareStatement(GET_ALL_PAGED);) {
-    	if (limit < 1) {
+      if (limit < 1) {
         limit = 10;
-    	}
+      }
       statement.setInt(1, limit);
       statement.setInt(2, offset);
       ResultSet rs = statement.executeQuery();
-      while (rs.next()){
+      while (rs.next()) {
         Customer customer = new Customer();
         customer.setId(rs.getLong("customer_id"));
         customer.setFirstName(rs.getString("first_name"));
@@ -187,16 +194,5 @@ public class CustomerDAO extends DataAccessObject<Customer> {
       throw new RuntimeException(ex);
     }
     return customers;
-  }
-  
-  @Override
-  public void delete(long id) {
-    try (PreparedStatement statement = this.connection.prepareStatement(DELETE);) {
-      statement.setLong(1, id);
-      statement.execute();
-    } catch (SQLException ex) {
-      ex.printStackTrace();
-      throw new RuntimeException(ex);
-    }
   }
 }

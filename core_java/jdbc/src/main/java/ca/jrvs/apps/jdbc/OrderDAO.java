@@ -13,18 +13,17 @@ import java.util.List;
 public class OrderDAO extends DataAccessObject<Order> {
 	
   private static final String GET_BY_ID =
-        "SELECT"
-        + " c.first_name, c.last_name, c.email,"
-        + " o.order_id, o.creation_date, o.total_due, o.status,"
-        + " s.first_name, s.last_name, s.email,"
-        + " ol.quantity,"
-        + " p.code, p.name, p.size, p.variety, p.price " +
-        "FROM orders o "
-        + "join customer c on o.customer_id = c.customer_id "
-        + "join salesperson s on o.salesperson_id=s.salesperson_id "
-        + "join order_item oI on oI.order_id = o.order_id "
-        + "join product p on oI.product_id = p.product_id " +
-        "WHERE o.order_id = ?";
+        "SELECT c.first_name, c.last_name, c.email, " +
+               "o.order_id, o.creation_date, o.total_due, o.status, " +
+               "s.first_name, s.last_name, s.email, " +
+               "ol.quantity, " +
+               "p.code, p.name, p.size, p.variety, p.price " +
+          "FROM orders o " +
+          "JOIN customer c on o.customer_id = c.customer_id " +
+          "JOIN salesperson s on o.salesperson_id = s.salesperson_id " +
+          "JOIN order_item ol on ol.order_id = o.order_id " +
+          "JOIN product p on ol.product_id = p.product_id " +
+         "WHERE o.order_id = ?";
   
   private static final String GET_FOR_CUST = "SELECT * FROM get_orders_by_customer(?)";
 
@@ -47,7 +46,7 @@ public class OrderDAO extends DataAccessObject<Order> {
           order.setCustomerEmail(resultSet.getString(3));
           order.setId(resultSet.getLong(4));
           orderId = order.getId();
-          order.setCreationDate(resultSets.getDate(5));
+          order.setCreationDate(resultSet.getDate(5));
           order.setTotalDue(resultSet.getBigDecimal(6));
           order.setStatus(resultSet.getString(7));
           order.setSalespersonFirstName(resultSet.getString(8));
@@ -94,7 +93,7 @@ public class OrderDAO extends DataAccessObject<Order> {
   public List<Order> getOrdersForCustomer(long customerId) {
     List<Order> orders = new ArrayList<>();
     try (PreparedStatement statement = connection.prepareStatement(GET_FOR_CUST);) {
-      statement.setLong(1, id);
+      statement.setLong(1, customerId);
       ResultSet resultSet = statement.executeQuery();
       long orderId = 0;
       Order order = null;
@@ -108,7 +107,7 @@ public class OrderDAO extends DataAccessObject<Order> {
       	  order.setCustomerFirstName(resultSet.getString(1));
           order.setCustomerLastName(resultSet.getString(2));
           order.setCustomerEmail(resultSet.getString(3));
-          order.setCreationDate(resultSets.getDate(5));
+          order.setCreationDate(resultSet.getDate(5));
           order.setTotalDue(resultSet.getBigDecimal(6));
           order.setStatus(resultSet.getString(7));
           order.setSalespersonFirstName(resultSet.getString(8));

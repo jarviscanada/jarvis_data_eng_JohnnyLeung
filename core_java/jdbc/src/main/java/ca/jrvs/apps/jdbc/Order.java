@@ -25,6 +25,10 @@ public class Order implements DataTransferObject {
     return id;
   }
 
+  public void setId(long id) {
+    this.id = id;
+  }
+
   public String getCustomerFirstName() {
     return customerFirstName;
   }
@@ -47,14 +51,6 @@ public class Order implements DataTransferObject {
 
   public void setCustomerEmail(String customerEmail) {
     this.customerEmail = customerEmail;
-  }
-
-  public long getId() {
-    return id;
-  }
-
-  public void setId(long id) {
-    this.id = id;
   }
 
   public Date getCreationDate() {
@@ -115,18 +111,17 @@ public class Order implements DataTransferObject {
 
   @Override
   public String toString() {
-    return "Order{" +
-        "customerFirstName = \"" + customerFirstName + ",\"" +
-        ", customerLastName = \"" + customerLastName + ",\"" +
-        ", customerEmail = \"" + customerEmail + ",\"" +
-        ", id = " + id +
-        ", creationDate = " + creationDate +
-        ", totalDue = " + totalDue +
-        ", status = \"" + status + ",\"" +
-        ", salespersonFirstName = \"" + salespersonFirstName + ",\"" +
-        ", salespersonLastName = \"" + salespersonLastName + ",\"" +
-        ", salespersonEmail = \"" + salespersonEmail + ",\"" +
-        ", orderLines = " + orderLines +
+    return "Order{id = " + id + ", " +
+        "customerFirstName = \"" + customerFirstName + ",\" " +
+        "customerLastName = \"" + customerLastName + ",\" " +
+        "customerEmail = \"" + customerEmail + ",\" " +
+        "creationDate = " + creationDate + " " +
+        "totalDue = " + totalDue + " " +
+        "status = \"" + status + ",\"" +
+        "salespersonFirstName = \"" + salespersonFirstName + ",\" " +
+        "salespersonLastName = \"" + salespersonLastName + ",\" " +
+        "salespersonEmail = \"" + salespersonEmail + ",\" " +
+        "orderLines = " + orderLines +
         '}';
   }
 }
