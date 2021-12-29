@@ -6,17 +6,18 @@ db_username=$2
 db_password=$3
 
 #Start docker
-sudo systemctl status docker > /dev/null || systemctl start docker
+sudo systemctl status docker || systemctl start docker
 
 #check container status
-docker container inspect jrvs-psql &> /dev/null
+docker container inspect jrvs-psql
+container_status=$?
 
 #User switch case to handle create|stop|start options
 case $cmd in
 
   create)
     # Check if the container is already created
-    if [ $? -eq 0 ]; then
+    if [ $container_status -eq 0 ]; then
       echo 'Container already exists'
       exit 0
     fi
@@ -35,7 +36,7 @@ case $cmd in
 
   start|stop)
     #check instance status; exit 1 if container has not been created
-    if [ $? -ne 0 ]; then
+    if [ $container_status -ne 0 ]; then
       echo 'Container has not been created'
       exit 1
     fi
