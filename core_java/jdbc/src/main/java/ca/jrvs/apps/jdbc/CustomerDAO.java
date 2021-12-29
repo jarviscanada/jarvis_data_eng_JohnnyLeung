@@ -17,13 +17,13 @@ public class CustomerDAO extends DataAccessObject<Customer> {
   
   private static final String GET_ONE =
   	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
-  	"FROM   customer " +
-  	"WHERE  customer_id = ?";
+  	  "FROM customer " +
+  	 "WHERE customer_id = ?";
   
   private static final String UPDATE =
   	"UPDATE customer " +
-       "SET first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
-     "WHERE customer_id = ?";
+       	   "SET first_name = ?, last_name = ?, email = ?, phone = ?, address = ?, city = ?, state = ?, zipcode = ? " +
+  	 "WHERE customer_id = ?";
   
   private static final String DELETE =
   	"DELETE FROM customer " +
@@ -33,7 +33,7 @@ public class CustomerDAO extends DataAccessObject<Customer> {
   	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
   	  "FROM customer " +
   	"ORDER BY last_name, first_name " +
-     "LIMIT ?";
+     	 "LIMIT ?";
   
   private static final String GET_ALL_PAGED =
   	"SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode " +
