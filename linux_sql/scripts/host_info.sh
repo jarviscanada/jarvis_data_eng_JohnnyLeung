@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #Setup and validate arguments
 psql_host=$1
 psql_port=$2
