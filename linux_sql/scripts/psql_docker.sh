@@ -21,7 +21,6 @@ case $cmd in
       exit 0
     fi
   
-    echo $#
     #check # of CLI arguments
     if [ $# -ne 3 ]; then
       echo 'Create requires username and password'
