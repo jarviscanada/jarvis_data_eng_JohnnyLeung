@@ -16,7 +16,7 @@ Technology used:
 ## Design Patterns
 Two common patterns that are used when dealing with databases and implementing Data Access Layer (DAL) are the Data Access Object (DAO) pattern and the repository pattern. Both patterns achieve the same goal of abstracting the implementation details of data access, but they each do so in different ways. This project uses the DAO pattern.
 
-1. DAOs provide an abstraction layer between the raw JDBC code and the rest of the code, specifically, the business logic. DAOs can come in two forms: they can be an abstraction or a true object. If used as a pure abstraction layer, a DTO (Data Transfer Object) will also be used. The DTO provides a single domain of data and should fully encapsulate objects that may also contain subobjects. The DAO itself often leverages a common interface, and a concrete implementation reacts on a single data domain.
+1. DAOs provide an abstraction layer between the raw JDBC code and the rest of the code, specifically, the business logic. DAOs can come in two forms: they can be an abstraction or a true object. If used as a pure abstraction layer, a Data Transfer Object (DTO) will also be used. The DTO provides a single domain of data and should fully encapsulate objects that may also contain subobjects. The DAO itself often leverages a common interface, and a concrete implementation reacts on a single data domain.
  
 2. The repository pattern focuses only on single-table access per class. Instead of doing joining in the database, in the repository pattern, you join in the code. Complex joins in the database require single-instance databases. The repository pattern can shard the database to allow for focus on single-table access, instead of having to access the entire database as a whole.
 
