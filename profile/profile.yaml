@@ -85,7 +85,7 @@ highlighted_projects:
     meetings. Used HTML, CSS, JavaScript, Node.js, Vue.js."
     
 #List of professional experience
-#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware,
+#The job description allows hiring managers to understand your job and the technologies you used (e.g. programming languages, libraries, algorithms, hardware,
 #tools, etc.).
 # Please read the project description guideline carefully. Make sure you follow the simplified SDLC pattern. (t.ly/NlXQ)
 #The description must be more than 25 words. If your experience is not software-related, please focus on soft skills and achievements (e.g. team collaboration,
@@ -119,8 +119,13 @@ education:
 #Optional section
 others:
     #category
-  - title: "Activities/Hobbies"
+  - title: "Certificates"
     #list of items
+    bullets:
+      - "Learning REST APIs - LinkedIn Learning (2021)"
+      - "Learning JDBC - LinkedIn Learning (2021)"
+      - "Java: Automated API Testing with REST Assured - LinkedIn Learning (2021)"
+  - title: "Activities/Hobbies"
     bullets:
       - "Watching tech channels on YouTube (Linus, Marques Brownlee, etc.)"
       - "Casual gaming"
