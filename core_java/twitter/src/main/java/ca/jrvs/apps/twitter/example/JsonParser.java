@@ -1,5 +1,13 @@
 package ca.jrvs.apps.twitter.example;
 
+import ca.jrvs.apps.twitter.example.dto.Company;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
+import java.io.IOException;
+
 public class JsonParser {
 
   /**
@@ -11,7 +19,7 @@ public class JsonParser {
   public static String toJson(Object object, boolean prettyJson, boolean includeNullValues) throws JsonProcessingException {
     ObjectMapper m = new ObjectMapper();
     if (!includeNullValues) {
-      m.setSerializationInclusion(Include.NON_NULL);
+      m.setSerializationInclusion(JsonInclude.Include.NON_NULL);
     }
     if (prettyJson) {
       m.enable(SerializationFeature.INDENT_OUTPUT);

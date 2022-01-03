@@ -5,7 +5,7 @@ import java.util.List;
 public class Entities {
 
   private List<Hashtag> hashtags;
-  private List<UserMentions> user_mentions;
+  private List<UserMention> user_mentions;
 
   public List<Hashtag> getHashtags() {
     return hashtags;
@@ -15,11 +15,11 @@ public class Entities {
     this.hashtags = hashtags;
   }
 
-  public List<UserMentions> getUser_mentions() {
+  public List<UserMention> getUser_mentions() {
     return user_mentions;
   }
 
-  public void setUser_mentions(List<UserMentions> user_mentions) {
+  public void setUser_mentions(List<UserMention> user_mentions) {
     this.user_mentions = user_mentions;
   }
 }
