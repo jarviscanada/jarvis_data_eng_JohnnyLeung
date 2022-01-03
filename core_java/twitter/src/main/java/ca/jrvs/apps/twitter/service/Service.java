@@ -15,7 +15,6 @@ public interface Service {
    */
   Tweet postTweet(Tweet tweet);
 
-
   /**
    * Search a tweet by ID
    *

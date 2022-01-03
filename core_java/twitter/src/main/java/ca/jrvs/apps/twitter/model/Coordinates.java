@@ -3,9 +3,9 @@ package ca.jrvs.apps.twitter.model;
 import java.util.List;
 
 public class Coordinates {
+
   private List<Float> coordinates;
   private String type;
-
 
   public List<Float> getCoordinates() {
     return coordinates;
