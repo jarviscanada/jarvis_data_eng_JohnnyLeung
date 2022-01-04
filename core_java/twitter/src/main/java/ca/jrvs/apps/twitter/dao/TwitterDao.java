@@ -78,7 +78,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
   /**
    * Check response status code Convert Response Entity to Tweet
    */
-  private Tweet parseResponseBody(HttpResponse httpResponse, Integer expectedResponseCode) {
+  public Tweet parseResponseBody(HttpResponse httpResponse, Integer expectedResponseCode) {
     Tweet tweet = null;
 
     //Check response status

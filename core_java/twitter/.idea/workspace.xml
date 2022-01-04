@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="934d9027-53c5-4dca-acd6-33285b9beeae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/TwitterDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/model/UserMention.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoIntTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/example/TwitterApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/TwitterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/TwitterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +56,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johnny\Documents\GitHub\jarvis_data_eng_JohnnyLeung\core_java\twitter\src\test\java\ca\jrvs\apps\twitter" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.test">
     <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -131,5 +136,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
