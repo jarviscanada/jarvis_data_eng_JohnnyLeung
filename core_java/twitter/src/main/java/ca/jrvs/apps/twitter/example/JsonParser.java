@@ -16,7 +16,8 @@ public class JsonParser {
    * @return JSON String
    * @throws JsonProcessingException
    */
-  public static String toJson(Object object, boolean prettyJson, boolean includeNullValues) throws JsonProcessingException {
+  public static String toJson(Object object, boolean prettyJson, boolean includeNullValues)
+      throws JsonProcessingException {
     ObjectMapper m = new ObjectMapper();
     if (!includeNullValues) {
       m.setSerializationInclusion(JsonInclude.Include.NON_NULL);

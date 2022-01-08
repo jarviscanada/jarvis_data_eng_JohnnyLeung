@@ -36,7 +36,6 @@ public class TwitterDaoIntTest {
     Double lat = 1d;
     Double lon = -1d;
     Tweet postTweet = TweetUtil.buildTweet(text, lon, lat);
-    System.out.println(JsonParser.toJson(postTweet, true, false));
 
     Tweet tweet = dao.create(postTweet);
 
