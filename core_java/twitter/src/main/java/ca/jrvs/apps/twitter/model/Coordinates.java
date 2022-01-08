@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Coordinates {
 
-  private List<Float> coordinates;
+  private List<Double> coordinates;
   private String type;
 
-  public List<Float> getCoordinates() {
+  public List<Double> getCoordinates() {
     return coordinates;
   }
 
-  public void setCoordinates(List<Float> coordinates) {
+  public void setCoordinates(List<Double> coordinates) {
     this.coordinates = coordinates;
   }
 

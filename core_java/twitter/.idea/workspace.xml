@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="934d9027-53c5-4dca-acd6-33285b9beeae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/example/TwitterApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/TwitterCLIApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/controller/TwitterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/service/TwitterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/spring/TwitterCLIBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/spring/TwitterCLIComponentScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/spring/TwitterCLISpringBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/util/TweetUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/controller/TwitterControllerIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/controller/TwitterControllerUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/service/TwitterServiceIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/service/TwitterServiceUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/TwitterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/TwitterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/model/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/twitter/model/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoIntTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/TwitterDaoUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/twitter/dao/helper/TwitterHttpHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

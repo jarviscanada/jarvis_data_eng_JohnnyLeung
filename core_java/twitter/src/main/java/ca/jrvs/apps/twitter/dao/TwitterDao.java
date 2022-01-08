@@ -1,6 +1,7 @@
 package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
+import ca.jrvs.apps.twitter.example.JsonParser;
 import ca.jrvs.apps.twitter.model.Tweet;
 import com.google.gdata.util.common.base.PercentEscaper;
 import org.apache.http.HttpResponse;
@@ -9,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -32,7 +32,9 @@ public class TwitterDao implements CrdDao<Tweet, String> {
   private HttpHelper httpHelper;
 
   @Autowired
-  public TwitterDao(HttpHelper httpHelper) { this.httpHelper = httpHelper; }
+  public TwitterDao(HttpHelper httpHelper) {
+    this.httpHelper = httpHelper;
+  }
 
   @Override
   public Tweet create(Tweet tweet) {
@@ -106,7 +108,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
     //Deser JSON String to Tweet object
     try {
-      tweet = JsonUtil.toObjectFromJson(jsonStr, Tweet.class);
+      tweet = JsonParser.toObjectFromJson(jsonStr, Tweet.class);
     } catch (IOException ex) {
       throw new RuntimeException("Unable to convert JSON str to Object", ex);
     }
@@ -119,9 +121,11 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     URI uri;
     try {
       uri = new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL +
-              percentEscaper.escape(tweet.getText()) + AMPERSAND + "long" + EQUAL +
-              tweet.getCoordinates().getCoordinates().get(0).toString() + AMPERSAND + "lat" + EQUAL +
-              tweet.getCoordinates().getCoordinates().get(1).toString());
+          percentEscaper.escape(tweet.getText()) +
+          AMPERSAND + "long" + EQUAL +
+          tweet.getCoordinates().getCoordinates().get(0).toString() +
+          AMPERSAND + "lat" + EQUAL +
+          tweet.getCoordinates().getCoordinates().get(1).toString());
     } catch (URISyntaxException ex) {
       throw new RuntimeException("Could not create URI", ex);
     }
