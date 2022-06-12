@@ -62,16 +62,16 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-        # Keywords: Java 8, JDBC, RDBMS, SQL, CRUD, DAO
-        - "JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification."
-        # Keywords: Java 8, Lambda, Stream API, IntelliJ
-        - "Grep App: Developed an application to replicate the Linux grep command, which recursively searches for a specified text pattern in files in a given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the Java 8 Lambda Stream API. Maven was used for packaging the application into a JAR file. A Docker image of the application was made and is available on Docker Hub."
+      # Keywords: Java 8, Lambda, Stream API, IntelliJ
+      - "Grep App: Developed an application to replicate the Linux grep command, which recursively searches for a specified text pattern in files in a given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the Java 8 Lambda Stream API. Maven was used for packaging the application into a JAR file. A Docker image of the application was made and is available on Docker Hub."
+      # Keywords: Java 8, JDBC, RDBMS, SQL, CRUD, DAO
+      - "JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification."
 
 # List of personal or academic projects
 # Feel free to add more projects
 # Please read the project description guideline carefully. Make sure you follow the simplified SDLC pattern. (t.ly/NlXQ)
 highlighted_projects:
-    #project name
+  #project name
   - name: "Conway's Game of Life"
     #URL is optional
     git_url: "https://github.com/EternalDragonX/Conway-s-Game-of-Life"
@@ -142,7 +142,7 @@ education:
       
 #Optional section
 others:
-    #category
+  #category
   - title: "Certificates"
     #list of items
     bullets:
