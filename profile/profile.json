@@ -64,19 +64,19 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "\n- Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead\n- Implemented Gitflow framework for collaboration and project planning\n- Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java\n",
+      "description": "\n\n- Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead\n- Implemented Gitflow framework for collaboration and project planning\n- Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java\n",
       "duration": "2021-present",
       "title": "Software Developer"
     },
     {
       "company": "National Bank of Canada",
-      "description": "\n- Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode\n- Developed automated application tests using NBC's frameworks embedded in continuous testing (CT)\n- Supported and assisted (onsite/offshore) parties involved in testing, coordinate team activities, and act as a coach to help resources master QA activities\n- Suggested and influenced the definition and development of QA practices and processes\n- Helped implement test automation tools in a DevOps environment and recommend other appropriate tools\n- Ensured the quality of deliverables and that deadlines are met while managing risks\n- Monitored QA activities daily including developing and executing tests, managing irregularities, and providing progress report\n",
+      "description": "\n\n- Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode\n- Developed automated application tests using NBC's frameworks embedded in continuous testing (CT)\n- Supported and assisted (onsite/offshore) parties involved in testing, coordinate team activities, and act as a coach to help resources master QA activities\n- Suggested and influenced the definition and development of QA practices and processes\n- Helped implement test automation tools in a DevOps environment and recommend other appropriate tools\n- Ensured the quality of deliverables and that deadlines are met while managing risks\n- Monitored QA activities daily including developing and executing tests, managing irregularities, and providing progress report\n",
       "duration": "February-June 2022",
       "title": "Test Automation Developer"
     },
     {
       "company": "Queen's University",
-      "description": "\n- Worked closely with students via email and Zoom calls to provide individualized attention and assistance\n- Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses\n- Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out\n",
+      "description": "\n\n- Worked closely with students via email and Zoom calls to provide individualized attention and assistance\n- Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses\n- Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out\n",
       "duration": "2020-2021",
       "title": "Teaching Assistant"
     }
