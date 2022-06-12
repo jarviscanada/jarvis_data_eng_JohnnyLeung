@@ -102,6 +102,7 @@ professional_experience:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: |
     
+    
       - Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead
       - Implemented Gitflow framework for collaboration and project planning
       - Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java
@@ -109,6 +110,7 @@ professional_experience:
     company: "National Bank of Canada"
     duration: "February-June 2022"
     description: |
+    
     
       - Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode
       - Developed automated application tests using NBC's frameworks embedded in continuous testing (CT)
@@ -121,6 +123,7 @@ professional_experience:
     company: "Queen's University"
     duration: "2020-2021"
     description: |
+    
     
       - Worked closely with students via email and Zoom calls to provide individualized attention and assistance
       - Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses
