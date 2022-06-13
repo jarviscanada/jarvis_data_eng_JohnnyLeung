@@ -1,6 +1,13 @@
 # Johnny Leung . Jarvis Consulting
 
-I graduated from Queen's University in Kingston, Ontario, with a Bachelor of Computing (Honours) specializing in Software Design. Now I am eager to apply what I have learned both in school and in my work to a challenging, dynamic, and teamwork-oriented role. Currently, I am working as a Data Engineer at Jarvis Consulting Group. I am expanding my skill set at Jarvis by exercising agile development methods and periodically learning new technology. More specifically, I have been working with my team in an Agile/Scrum development cycle and have developed applications with Linux, PostgreSQL, and Java. I have a passion for writing clean, efficient, and high-quality code, and I hope that my work at Jarvis shows that. What excites me about software development is the limitless potential. I can create anything I want or can think of–from trivial applications like a music downloader to a large-scale, graphical operating system with millions of lines of code like Windows. I can turn any small idea I have into potentially the next Twitter, Facebook, or YouTube; the only thing limiting me as a software developer is my creativity and drive. I sincerely hope that the skills, passion, and work shown here make you want to learn more about me. If so, I look forward to speaking with you.
+I graduated from Queen's University in Kingston, Ontario, with a Bachelor of Computing (Honours), specializing in Software Design. Now I am eager to apply what I have learned both in school and in my work to a challenging, dynamic, and teamwork-oriented role.
+
+Currently, I am working as a Data Engineer at Jarvis Consulting Group. I am expanding my skill set at Jarvis by exercising agile development methods and periodically learning new technology. More specifically, I have been working with my team in an Agile/Scrum development cycle and have developed applications with Linux, PostgreSQL, and Java. I have a passion for writing clean, efficient, and high-quality code, and I hope that my work at Jarvis shows that.
+
+What excites me about software development is the limitless potential. I can create anything I want or can think of–from trivial applications like a music downloader to a large-scale, graphical operating system with millions of lines of code like Windows. I can turn any small idea I have into potentially the next Twitter, Facebook, or YouTube; the only thing limiting me as a software developer is my creativity and drive.
+
+I sincerely hope that the skills, passion, and work shown here make you want to learn more about me. If so, I look forward to speaking with you.
+
 
 ## Skills
 
@@ -19,8 +26,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeung/tree/master/core_java)]:
       
-  - JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.
   - Grep App: Developed an application to replicate the Linux grep command, which recursively searches for a specified text pattern in files in a given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the Java 8 Lambda Stream API. Maven was used for packaging the application into a JAR file. A Docker image of the application was made and is available on Docker Hub.
+  - JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.
 
 
 ## Highlighted Projects
@@ -33,9 +40,30 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-present)**: Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead. Implemented Gitflow framework for collaboration and project planning. Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java.
+**Software Developer, Jarvis (2021-present)**: 
 
-**Teaching Assistant, Queen's University (2020-2021)**: Worked closely with students via email and Zoom calls to provide individualized attention and assistance. Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses. Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out.
+- Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead
+- Implemented Gitflow framework for collaboration and project planning
+- Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java
+
+
+**Test Automation Developer, National Bank of Canada (February-June 2022)**: 
+
+- Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode
+- Developed automated application tests using NBC's frameworks embedded in continuous testing (CT)
+- Supported and assisted (onsite/offshore) parties involved in testing, coordinate team activities, and act as a coach to help resources master QA activities
+- Suggested and influenced the definition and development of QA practices and processes
+- Helped implement test automation tools in a DevOps environment and recommend other appropriate tools
+- Ensured the quality of deliverables and that deadlines are met while managing risks
+- Monitored QA activities daily including developing and executing tests, managing irregularities, and providing progress report
+
+
+**Teaching Assistant, Queen's University (2020-2021)**: 
+
+- Worked closely with students via email and Zoom calls to provide individualized attention and assistance
+- Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses
+- Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out
+
 
 
 ## Education
@@ -44,6 +72,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 
 ## Miscellaneous
+- Learning REST APIs - LinkedIn Learning (2021)
+- Learning JDBC - LinkedIn Learning (2021)
+- Java: Automated API Testing with REST Assured - LinkedIn Learning (2021)
 - Watching tech channels on YouTube (Linus, Marques Brownlee, etc.)
 - Casual gaming
 - Watching movies/shows
