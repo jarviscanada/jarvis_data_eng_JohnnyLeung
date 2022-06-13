@@ -26,8 +26,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeung/tree/master/core_java)]:
       
-  - JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.
   - Grep App: Developed an application to replicate the Linux grep command, which recursively searches for a specified text pattern in files in a given directory and outputs matched lines to a file. The IntelliJ IDE was used with JUnit testing, and methods were written using the Java 8 Lambda Stream API. Maven was used for packaging the application into a JAR file. A Docker image of the application was made and is available on Docker Hub.
+  - JDBC App: Developed a customer-order-processing system programmed in Java 8 and using the Data Access Object (DAO) pattern. It is connected to a PostgreSQL (PSQL) database that runs inside a Docker container. Java Database Connectivity (JDBC) is used to connect the application with the database. JDBC is also used to allow the user to run queries and perform all 4 CRUD (create, read, update, and delete) operations on the database. The database contains basic sales information, which includes customers, orders, salespeople, and products. PSQL was used to create, populate, and query the database; Maven to compile and build the project and manage its build dependencies; a Docker container for deploying the database; and DBeaver for database testing and verification.
 
 
 ## Highlighted Projects
@@ -40,12 +40,16 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-present)**: - Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead
+**Software Developer, Jarvis (2021-present)**: 
+
+- Exercised Agile/Scrum methodology on a daily basis with team, both as a member and a lead
 - Implemented Gitflow framework for collaboration and project planning
 - Personally developed various software applications using Linux, PostgreSQL, Bash, RDBMS, Docker, Maven, and Java
 
 
-**Test Automation Developer, National Bank of Canada (February-June 2022)**: - Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode
+**Test Automation Developer, National Bank of Canada (February-June 2022)**: 
+
+- Provided support for the planning and overall integration of test activities in projects implementing IT solutions in Agile mode
 - Developed automated application tests using NBC's frameworks embedded in continuous testing (CT)
 - Supported and assisted (onsite/offshore) parties involved in testing, coordinate team activities, and act as a coach to help resources master QA activities
 - Suggested and influenced the definition and development of QA practices and processes
@@ -54,7 +58,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLeun
 - Monitored QA activities daily including developing and executing tests, managing irregularities, and providing progress report
 
 
-**Teaching Assistant, Queen's University (2020-2021)**: - Worked closely with students via email and Zoom calls to provide individualized attention and assistance
+**Teaching Assistant, Queen's University (2020-2021)**: 
+
+- Worked closely with students via email and Zoom calls to provide individualized attention and assistance
 - Collaborated with instructor and other TAs to ensure efficient operation and delivery of courses
 - Created a friendly, open environment for students during hosted office hours, where students could get help, study, work on assignments, share concerns, talk with others, or simply hang out
 
