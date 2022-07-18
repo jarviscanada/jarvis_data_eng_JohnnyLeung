@@ -146,6 +146,7 @@ others:
   - title: "Certificates"
     #list of items
     bullets:
+      - "Learning Docker - LinkedIn Learning (2022)"
       - "Learn Apache Camel Framework with Spring Boot - Udemy (2022)"
       - "Terraform for AWS - Beginner to Expert - Udemy (2022)"
       - "Rest API Testing (Automation) from Scratch-Rest Assured Java - Udemy (2022)"
